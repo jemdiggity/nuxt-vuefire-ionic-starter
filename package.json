@@ -28,6 +28,7 @@
     "@capacitor/cli": "5.7.1",
     "@nuxtjs/ionic": "^0.13.1",
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "prettier": "3.2.5",
     "typescript": "^5.3.3"
   }
 }
