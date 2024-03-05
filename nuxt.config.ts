@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   ssr: false,
   modules: ["nuxt-vuefire"],
   vuefire: {
+    auth: {
+      enabled: true,
+    },
     config: {
       apiKey: "AIzaSyDyTmnM9K1BNABWyeVhL2IIxO7xcJAstms",
       authDomain: "nuxt-vuefire-2436b.firebaseapp.com",
