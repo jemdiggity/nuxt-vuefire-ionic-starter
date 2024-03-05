@@ -39,3 +39,25 @@ pnpm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## iOS
+
+For device:
+Open `ios/App/App.xcodeproj` in Xcode.
+
+- Select the App icon in the file explorer and setup "Signing and Capabilities"
+- Select Window => Device & Simulator, select your device and put it in Developer mode.
+
+On your device, Settings -> General -> VPN & Device Management, then trust the developer.
+
+```bash
+npx cap sync
+npx cap run ios
+```
+
+For simulator:
+
+```bash
+npx cap sync
+npx cap open ios
+```
