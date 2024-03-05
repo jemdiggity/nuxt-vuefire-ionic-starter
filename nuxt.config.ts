@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-  modules: ["nuxt-vuefire", "@nuxtjs/ionic"],
+  modules: ["nuxt-vuefire", "@nuxtjs/ionic", "@nuxtjs/tailwindcss"],
+  ionic: {
+    css: {
+      utilities: true,
+    },
+  },
   vuefire: {
     auth: {
       enabled: true,
