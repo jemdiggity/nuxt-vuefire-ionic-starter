@@ -4,6 +4,12 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## Setup
 
+Install [CocoaPods](https://capacitorjs.com/docs/getting-started/environment-setup#cocoapods) with
+
+```bash
+brew install cocoapods
+```
+
 Make sure to install the dependencies:
 
 ```bash
