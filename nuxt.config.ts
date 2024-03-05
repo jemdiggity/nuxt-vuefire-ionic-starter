@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-  modules: ["nuxt-vuefire"],
+  modules: ["nuxt-vuefire", "@nuxtjs/ionic"],
   vuefire: {
     auth: {
       enabled: true,
