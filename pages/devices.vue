@@ -1,5 +1,3 @@
-import { IonBackButton } from '#build/components'; import { IonButtons } from
-'#build/components';
 <template>
   <IonPage>
     <IonHeader>
@@ -20,3 +18,9 @@ import { IonBackButton } from '#build/components'; import { IonButtons } from
     </IonContent>
   </IonPage>
 </template>
+<script setup lang="ts">
+definePageMeta({
+  alias: ["/devices"],
+  middleware: ["auth"],
+});
+</script>

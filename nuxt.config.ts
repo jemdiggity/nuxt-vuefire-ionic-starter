@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   },
   vuefire: {
     auth: {
-      enabled: true,
+      enabled: false,
     },
     config: {
       apiKey: "AIzaSyDyTmnM9K1BNABWyeVhL2IIxO7xcJAstms",

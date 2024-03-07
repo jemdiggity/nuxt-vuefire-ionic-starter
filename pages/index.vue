@@ -6,11 +6,26 @@
       </IonToolbar>
     </IonHeader>
     <IonContent class="ion-padding">
-      <IonButton>Logout</IonButton>
+      <IonButton @click="doLogOut">Logout</IonButton>
       <IonButton router-link="/devices">Devices</IonButton>
+      <IonButton router-link="/login">Login</IonButton>
       <IonCard>
-        <IonCardContent>blurg</IonCardContent>
+        <IonCardContent>{{ user?.email }}</IonCardContent>
       </IonCard>
     </IonContent>
   </IonPage>
 </template>
+<script lang="ts" setup>
+definePageMeta({
+  alias: ["/index"],
+  middleware: ["auth"],
+});
+const router = useRouter();
+const user = useFbAuth()?.currentUser;
+console.log(user);
+
+const doLogOut = async () => {
+  await useFbAuth()?.signOut();
+  router.replace("/login");
+};
+</script>
