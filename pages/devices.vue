@@ -13,14 +13,26 @@
       <IonButton>Logout</IonButton>
       <IonButton router-link="/">Home</IonButton>
       <IonCard>
-        <IonCardContent>blurg</IonCardContent>
+        <IonCardContent>
+          <IonList v-for="device in devices" :key="device.id">
+            <IonItem>
+              <IonLabel
+                >{{ device.deviceName }} | {{ device.deviceType }}</IonLabel
+              >
+            </IonItem>
+          </IonList>
+        </IonCardContent>
       </IonCard>
     </IonContent>
   </IonPage>
 </template>
 <script setup lang="ts">
+import { collection } from "firebase/firestore";
+
 definePageMeta({
   alias: ["/devices"],
   middleware: ["auth"],
 });
+const db = useFirestore();
+const devices = useCollection(collection(db, "devices"));
 </script>
