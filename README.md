@@ -42,7 +42,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## iOS
 
-For device:
 Open `ios/App/App.xcodeproj` in Xcode.
 
 - Select the App icon in the file explorer and setup "Signing and Capabilities"
@@ -51,13 +50,10 @@ Open `ios/App/App.xcodeproj` in Xcode.
 On your device, Settings -> General -> VPN & Device Management, then trust the developer.
 
 ```bash
-npx cap sync
+pnpm run generate
 npx cap run ios
 ```
 
-For simulator:
+### Using Ionic VSCode [extension](https://marketplace.visualstudio.com/items?itemName=ionic.ionic)
 
-```bash
-npx cap sync
-npx cap open ios
-```
+- Click Run->iOS in Ionic extension

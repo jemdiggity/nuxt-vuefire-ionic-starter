@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "ionic:build": "pnpm run generate"
   },
   "dependencies": {
     "@capacitor/android": "5.7.1",
