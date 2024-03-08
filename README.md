@@ -56,4 +56,5 @@ npx cap run ios
 
 ### Using Ionic VSCode [extension](https://marketplace.visualstudio.com/items?itemName=ionic.ionic)
 
+- Use the terminal commands above first, then use the extension once that works OK.
 - Click Run->iOS in Ionic extension
