@@ -58,3 +58,28 @@ npx cap run ios
 
 - Use the terminal commands above first, then use the extension once that works OK.
 - Click Run->iOS in Ionic extension
+
+## Android
+
+- Install [Android Studio](https://developer.android.com/studio)
+- Android Studio's build system, Gradle, needs relatively [old version](https://docs.gradle.org/current/userguide/compatibility.html) of JDK. Install older version of OpenJDK.
+
+```bash
+brew install openjdk@17
+```
+
+- Check java version
+
+```bash
+java --version
+```
+
+- fix symlinks if incorrect
+
+```bash
+cd /usr/local/opt/openjdk
+rm openjdk
+ln -s ../Cellar/openjdk@17/17.0.10 openjdk
+```
+
+- Use Ionic extension to open project in Android Studio and check `Tools -> Device Manager`.
